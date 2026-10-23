@@ -117,8 +117,11 @@ def render(mode, last, all_time, since, now):
         (f"{cur} d", "current streak", f"longest {longest} d"),
     ]
 
+    private = bool(os.environ.get("GH_STATS_TOKEN")) or last["restrictedContributionsCount"] > 0
+    scope = "PUBLIC + PRIVATE" if private else "PUBLIC"
+    aria_scope = "including private work" if private else "public repositories"
     out = [f'<svg xmlns="http://www.w3.org/2000/svg" width="{W}" height="{H}" viewBox="0 0 {W} {H}" role="img" '
-           f'aria-label="{cal["totalContributions"]} contributions in the last 12 months, including private work">',
+           f'aria-label="{cal["totalContributions"]} contributions in the last 12 months, {aria_scope}">',
            """<style>
 .f{opacity:0;animation:fi .7s cubic-bezier(.2,.7,.2,1) forwards}
 @keyframes fi{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:none}}
@@ -131,7 +134,7 @@ def render(mode, last, all_time, since, now):
 @media (prefers-reduced-motion: reduce){.f,.cl,.sweep,.pulse{animation:none!important;opacity:1!important;transform:none!important}.sweep{display:none}}
 </style>""".replace("%SW%", str(len(weeks) * (cell + gap))),
            f'<rect x="0.5" y="0.5" width="{W-1}" height="{H-1}" rx="14" fill="none" stroke="{c["line"]}"/>',
-           f'<text x="36" y="44" font-family="{MONO}" font-size="12" font-weight="600" letter-spacing="1.5" fill="{c["faint"]}">CONTRIBUTIONS  ·  PUBLIC + PRIVATE</text>',
+           f'<text x="36" y="44" font-family="{MONO}" font-size="12" font-weight="600" letter-spacing="1.5" fill="{c["faint"]}">CONTRIBUTIONS  ·  {scope}</text>',
            f'<g class="f"><circle cx="{W-300}" cy="40" r="4" fill="{c["ok"]}" class="pulse"/>'
            f'<text x="{W-288}" y="44" font-family="{MONO}" font-size="12" fill="{c["muted"]}">Updated {now:%d %b %Y, %H:%M} UTC</text></g>']
 
@@ -149,13 +152,15 @@ def render(mode, last, all_time, since, now):
     for i, name in ((1, "Mon"), (3, "Wed"), (5, "Fri")):
         out.append(f'<text x="{gx0-12}" y="{gy0 + i*(cell+gap) + 11}" text-anchor="end" font-family="{MONO}" '
                    f'font-size="11" fill="{c["faint"]}">{name}</text>')
-    last_month = None
+    last_month, last_label_wi = None, -9
     for wi, w in enumerate(weeks):
         first = w["contributionDays"][0]["date"]
         m = first[5:7]
-        if m != last_month and 0 < wi < len(weeks) - 2:
-            label = dt.date.fromisoformat(first).strftime("%b")
-            out.append(f'<text x="{gx0 + wi*(cell+gap)}" y="{gy0-12}" font-family="{MONO}" font-size="11" fill="{c["faint"]}">{label}</text>')
+        if m != last_month:
+            if 0 < wi < len(weeks) - 2 and wi - last_label_wi >= 3:
+                label = dt.date.fromisoformat(first).strftime("%b")
+                out.append(f'<text x="{gx0 + wi*(cell+gap)}" y="{gy0-12}" font-family="{MONO}" font-size="11" fill="{c["faint"]}">{label}</text>')
+                last_label_wi = wi
             last_month = m
         for d in w["contributionDays"]:
             x = gx0 + wi * (cell + gap)
