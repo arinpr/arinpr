@@ -83,11 +83,11 @@ I build production software for teams that need it to keep working: SaaS platfor
 
 ## Activity
 
-Refreshed automatically every 6 hours.
+Public and private contributions, refreshed automatically every 6 hours.
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="assets/contributions-dark.svg">
-  <img src="assets/contributions-light.svg" width="100%" alt="GitHub contributions over the last 12 months">
+  <img src="assets/contributions-light.svg" width="100%" alt="GitHub contributions over the last 12 months, including private work">
 </picture>
 
 <br>
