@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="150" viewBox="0 0 1200 150" role="img" aria-label="8+ years, 300+ projects, 90K+ leads per day, 81% cloud cost reduction">
+<style>.fade { opacity: 0; animation: in .7s ease-out forwards; } @keyframes in { from { opacity:0 } to { opacity:1 } }</style>
+<rect x="0.5" y="0.5" width="1199" height="149" rx="12" fill="none" stroke="#d1d9e0"/>
+<g class="fade" style="animation-delay:0.00s">
+<text x="36.0" y="66" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Inter', Helvetica, Arial, sans-serif" font-size="38" font-weight="700" fill="#1f2328" letter-spacing="-0.5">8+</text>
+<text x="36.0" y="96" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Inter', Helvetica, Arial, sans-serif" font-size="15" font-weight="600" fill="#59636e">years shipping</text>
+<text x="36.0" y="118" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Inter', Helvetica, Arial, sans-serif" font-size="13" fill="#818b98">production software</text></g><g class="fade" style="animation-delay:0.12s">
+<text x="336.0" y="66" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Inter', Helvetica, Arial, sans-serif" font-size="38" font-weight="700" fill="#1f2328" letter-spacing="-0.5">300+</text>
+<text x="336.0" y="96" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Inter', Helvetica, Arial, sans-serif" font-size="15" font-weight="600" fill="#59636e">projects</text>
+<text x="336.0" y="118" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Inter', Helvetica, Arial, sans-serif" font-size="13" fill="#818b98">delivered end to end</text></g><line x1="300.0" y1="28" x2="300.0" y2="122" stroke="#d1d9e0"/><g class="fade" style="animation-delay:0.24s">
+<text x="636.0" y="66" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Inter', Helvetica, Arial, sans-serif" font-size="38" font-weight="700" fill="#1f2328" letter-spacing="-0.5">90K+</text>
+<text x="636.0" y="96" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Inter', Helvetica, Arial, sans-serif" font-size="15" font-weight="600" fill="#59636e">leads per day</text>
+<text x="636.0" y="118" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Inter', Helvetica, Arial, sans-serif" font-size="13" fill="#818b98">processed in live CRMs</text></g><line x1="600.0" y1="28" x2="600.0" y2="122" stroke="#d1d9e0"/><g class="fade" style="animation-delay:0.36s">
+<text x="936.0" y="66" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Inter', Helvetica, Arial, sans-serif" font-size="38" font-weight="700" fill="#1f2328" letter-spacing="-0.5">81%</text>
+<text x="936.0" y="96" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Inter', Helvetica, Arial, sans-serif" font-size="15" font-weight="600" fill="#59636e">cloud cost cut</text>
+<text x="936.0" y="118" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Inter', Helvetica, Arial, sans-serif" font-size="13" fill="#818b98">&#36;800 to &#36;150 per month</text></g><line x1="900.0" y1="28" x2="900.0" y2="122" stroke="#d1d9e0"/>
+</svg>
