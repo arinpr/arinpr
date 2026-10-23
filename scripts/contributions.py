@@ -3,7 +3,7 @@
 
 Runs in GitHub Actions. Uses GH_STATS_TOKEN (a personal token, so private
 contributions are counted) and falls back to GITHUB_TOKEN (public only).
-Writes assets/contributions-light.svg and assets/contributions-dark.svg.
+Writes assets/contributions-light.svg and assets/contributions-dark.svg (one per theme).
 """
 import datetime as dt
 import json
