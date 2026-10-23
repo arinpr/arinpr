@@ -87,7 +87,7 @@ Refreshed automatically every 6 hours.
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="assets/contributions-dark.svg">
-  <img src="assets/contributions-light.svg" width="100%" alt="GitHub contributions over the last 12 months, including private work">
+  <img src="assets/contributions-light.svg" width="100%" alt="GitHub contributions over the last 12 months">
 </picture>
 
 <br>
