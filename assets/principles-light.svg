@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="190" viewBox="0 0 1200 190" role="img" aria-label="Production first, AI that earns its place, small safe releases, async by default">
+<style>
+.f{opacity:0;animation:fi .7s cubic-bezier(.2,.7,.2,1) forwards}
+@keyframes fi{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:none}}
+.grow{transform-box:fill-box;transform-origin:left center;transform:scaleX(0);animation:grow 1.1s cubic-bezier(.2,.7,.2,1) forwards}
+@keyframes grow{to{transform:scaleX(1)}}
+.scan{stroke-dasharray:120 1200;animation:scan 6s linear infinite}
+@keyframes scan{from{stroke-dashoffset:1320}to{stroke-dashoffset:0}}
+.pulse{animation:pulse 2s ease-in-out infinite}
+@keyframes pulse{0%,100%{opacity:1}50%{opacity:.3}}
+@media (prefers-reduced-motion: reduce){
+  .f,.grow,.scan,.pulse,.rot,.hl,.wave,.float{animation:none!important;opacity:1!important;transform:none!important}
+  .rot2,.rot3{display:none}
+}
+</style>
+<rect x="0.5" y="0.5" width="1199" height="189" rx="14" fill="none" stroke="#d1d9e0"/>
+<rect x="32.0" y="38" width="22" height="3" rx="1.5" fill="#0969da" class="grow" style="animation-delay:0.10s"/>
+<g class="f" style="animation-delay:0.15s"><text x="32.0" y="74.0" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Inter', Helvetica, Arial, sans-serif" font-size="17" font-weight="700" fill="#1f2328" text-anchor="start">Production first</text></g>
+<g class="f" style="animation-delay:0.25s"><text x="32.0" y="104.0" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Inter', Helvetica, Arial, sans-serif" font-size="13.5" font-weight="400" fill="#59636e" text-anchor="start">Reliability, data quality and</text></g>
+<g class="f" style="animation-delay:0.30s"><text x="32.0" y="125.0" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Inter', Helvetica, Arial, sans-serif" font-size="13.5" font-weight="400" fill="#59636e" text-anchor="start">root-cause fixes over clever code.</text></g>
+<line x1="300.0" y1="28" x2="300.0" y2="162" stroke="#d1d9e0"/>
+<rect x="332.0" y="38" width="22" height="3" rx="1.5" fill="#8250df" class="grow" style="animation-delay:0.22s"/>
+<g class="f" style="animation-delay:0.27s"><text x="332.0" y="74.0" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Inter', Helvetica, Arial, sans-serif" font-size="17" font-weight="700" fill="#1f2328" text-anchor="start">AI that earns its place</text></g>
+<g class="f" style="animation-delay:0.37s"><text x="332.0" y="104.0" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Inter', Helvetica, Arial, sans-serif" font-size="13.5" font-weight="400" fill="#59636e" text-anchor="start">Every model call has a cost</text></g>
+<g class="f" style="animation-delay:0.42s"><text x="332.0" y="125.0" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Inter', Helvetica, Arial, sans-serif" font-size="13.5" font-weight="400" fill="#59636e" text-anchor="start">budget, a latency target and a</text></g>
+<g class="f" style="animation-delay:0.47s"><text x="332.0" y="146.0" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Inter', Helvetica, Arial, sans-serif" font-size="13.5" font-weight="400" fill="#59636e" text-anchor="start">fallback.</text></g>
+<line x1="600.0" y1="28" x2="600.0" y2="162" stroke="#d1d9e0"/>
+<rect x="632.0" y="38" width="22" height="3" rx="1.5" fill="#0969da" class="grow" style="animation-delay:0.34s"/>
+<g class="f" style="animation-delay:0.39s"><text x="632.0" y="74.0" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Inter', Helvetica, Arial, sans-serif" font-size="17" font-weight="700" fill="#1f2328" text-anchor="start">Small, safe releases</text></g>
+<g class="f" style="animation-delay:0.49s"><text x="632.0" y="104.0" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Inter', Helvetica, Arial, sans-serif" font-size="13.5" font-weight="400" fill="#59636e" text-anchor="start">Incremental delivery, documented</text></g>
+<g class="f" style="animation-delay:0.54s"><text x="632.0" y="125.0" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Inter', Helvetica, Arial, sans-serif" font-size="13.5" font-weight="400" fill="#59636e" text-anchor="start">decisions and easy rollbacks.</text></g>
+<line x1="900.0" y1="28" x2="900.0" y2="162" stroke="#d1d9e0"/>
+<rect x="932.0" y="38" width="22" height="3" rx="1.5" fill="#8250df" class="grow" style="animation-delay:0.46s"/>
+<g class="f" style="animation-delay:0.51s"><text x="932.0" y="74.0" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Inter', Helvetica, Arial, sans-serif" font-size="17" font-weight="700" fill="#1f2328" text-anchor="start">Async by default</text></g>
+<g class="f" style="animation-delay:0.61s"><text x="932.0" y="104.0" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Inter', Helvetica, Arial, sans-serif" font-size="13.5" font-weight="400" fill="#59636e" text-anchor="start">Clear written updates and US / EU</text></g>
+<g class="f" style="animation-delay:0.66s"><text x="932.0" y="125.0" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Inter', Helvetica, Arial, sans-serif" font-size="13.5" font-weight="400" fill="#59636e" text-anchor="start">hours overlap from India.</text></g>
+</svg>

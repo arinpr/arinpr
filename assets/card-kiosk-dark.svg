@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="590" height="230" viewBox="0 0 590 230" role="img" aria-label="Stripe Tap to Pay Kiosk: Self-service payment kiosk on Stripe Terminal with Tap to Pay, a Flutter WebView app and a native Kotlin bridge.">
+<style>
+.f{opacity:0;animation:fi .7s cubic-bezier(.2,.7,.2,1) forwards}
+@keyframes fi{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:none}}
+.grow{transform-box:fill-box;transform-origin:left center;transform:scaleX(0);animation:grow 1.1s cubic-bezier(.2,.7,.2,1) forwards}
+@keyframes grow{to{transform:scaleX(1)}}
+.scan{stroke-dasharray:120 1200;animation:scan 6s linear infinite}
+@keyframes scan{from{stroke-dashoffset:1320}to{stroke-dashoffset:0}}
+.pulse{animation:pulse 2s ease-in-out infinite}
+@keyframes pulse{0%,100%{opacity:1}50%{opacity:.3}}
+@media (prefers-reduced-motion: reduce){
+  .f,.grow,.scan,.pulse,.rot,.hl,.wave,.float{animation:none!important;opacity:1!important;transform:none!important}
+  .rot2,.rot3{display:none}
+}
+</style>
+<rect x="0.5" y="0.5" width="589" height="229" rx="12" fill="none" stroke="#3d444d"/>
+<line x1="12" y1="0.8" x2="578" y2="0.8" stroke="#ab7df8" stroke-width="2" class="scan" style="animation-delay:0.7s"/>
+<g class="f" style="animation-delay:0.05s"><text x="28.0" y="40.0" font-family="ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, 'DejaVu Sans Mono', monospace" font-size="11.5" font-weight="600" fill="#656c76" text-anchor="start" letter-spacing="1.4">PAYMENTS  ·  HARDWARE</text></g>
+<g class="f" style="animation-delay:0.15s"><text x="28.0" y="76.0" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Inter', Helvetica, Arial, sans-serif" font-size="24" font-weight="700" fill="#f0f6fc" text-anchor="start" letter-spacing="-0.3">Stripe Tap to Pay Kiosk</text></g>
+<g class="f" style="animation-delay:0.25s"><text x="28.0" y="108.0" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Inter', Helvetica, Arial, sans-serif" font-size="14" font-weight="400" fill="#9198a1" text-anchor="start">Self-service payment kiosk on Stripe Terminal with Tap to Pay, a</text></g>
+<g class="f" style="animation-delay:0.30s"><text x="28.0" y="130.0" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Inter', Helvetica, Arial, sans-serif" font-size="14" font-weight="400" fill="#9198a1" text-anchor="start">Flutter WebView app and a native Kotlin bridge.</text></g>
+<g class="f" style="animation-delay:0.45s"><rect x="28.0" y="180" width="68.6" height="26" rx="13" fill="#151b23" stroke="#3d444d"/><text x="62.3" y="197.0" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Inter', Helvetica, Arial, sans-serif" font-size="12" font-weight="400" fill="#f0f6fc" text-anchor="middle">Flutter</text></g>
+<g class="f" style="animation-delay:0.51s"><rect x="104.6" y="180" width="62.0" height="26" rx="13" fill="#151b23" stroke="#3d444d"/><text x="135.6" y="197.0" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Inter', Helvetica, Arial, sans-serif" font-size="12" font-weight="400" fill="#f0f6fc" text-anchor="middle">Kotlin</text></g>
+<g class="f" style="animation-delay:0.57s"><rect x="174.6" y="180" width="68.6" height="26" rx="13" fill="#151b23" stroke="#3d444d"/><text x="208.9" y="197.0" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Inter', Helvetica, Arial, sans-serif" font-size="12" font-weight="400" fill="#f0f6fc" text-anchor="middle">Node.js</text></g>
+<g class="f" style="animation-delay:0.63s"><rect x="251.2" y="180" width="121.9" height="26" rx="13" fill="#151b23" stroke="#3d444d"/><text x="312.2" y="197.0" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Inter', Helvetica, Arial, sans-serif" font-size="12" font-weight="400" fill="#f0f6fc" text-anchor="middle">Stripe Terminal</text></g>
+</svg>

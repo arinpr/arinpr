@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="180" viewBox="0 0 1200 180" role="img" aria-label="Contribution panel is being generated">
+<style>.p{animation:p 2s ease-in-out infinite}@keyframes p{50%{opacity:.3}}</style>
+<rect x="0.5" y="0.5" width="1199" height="179" rx="14" fill="none" stroke="#d1d9e0"/>
+<circle cx="440" cy="84" r="5" fill="#1a7f37" class="p"/>
+<text x="456" y="90" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="18" font-weight="600" fill="#1f2328">Contribution panel is being generated</text>
+<text x="600" y="120" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="13" fill="#59636e">Public and private activity, refreshed automatically every 6 hours</text>
+</svg>

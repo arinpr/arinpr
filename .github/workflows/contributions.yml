@@ -1,0 +1,45 @@
+name: Update contribution panel
+
+on:
+  schedule:
+    - cron: "23 */6 * * *"   # every 6 hours
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - "scripts/contributions.py"
+      - ".github/workflows/contributions.yml"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: contributions
+  cancel-in-progress: true
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Build contribution SVGs
+        env:
+          USERNAME: arinpr
+          # Personal token (scope: read:user) so private contributions are included.
+          GH_STATS_TOKEN: ${{ secrets.GH_STATS_TOKEN }}
+          # Fallback: public contributions only.
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: python3 scripts/contributions.py
+
+      - name: Commit if changed
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add assets/contributions-*.svg
+          if git diff --cached --quiet; then
+            echo "No changes"
+          else
+            git commit -m "Update contribution panel"
+            git push
+          fi
