@@ -83,7 +83,7 @@ I build production software for teams that need it to keep working: SaaS platfor
 
 ## Activity
 
-Public and private contributions, refreshed automatically every 6 hours.
+Refreshed automatically every 6 hours.
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="assets/contributions-dark.svg">
